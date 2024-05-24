@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Formulario de datos</title>        
+    </head>
+    <body>
+        <h2>Datos Personales</h2>
+        <form action="7submit" method="post">
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Apellido:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label>Género:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Masculino</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Femenino</label><br>
+            <label for="email">Correo Electrónico</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="bod">Fecha de Nacimiento: </label><br>
+            <input type="date" id="dob" name="dob" required><br>
+            <label for="address">Dirección:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>    
+    </body>
+</html>
