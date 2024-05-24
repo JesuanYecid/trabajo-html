@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <tittle> Formulario de Reserva de Viaje</tittle>
+</head>
+
+<body>
+    <h2> Formulario de viaje</h2>
+    <form action="/submit-reservation" method="post">
+        <label for="fname">Nombre Completo*:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="email">Correo electronico*:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="package">Selecciona el paquete de viaje:</label><br>
+        <select id="package" name="package">
+            <option value="">Selecciona</option>
+            <option value="Extravagante">Extravagante</option>
+            <option value="Premium">Premium</option>
+            <option value="Economico">Economico</option>
+            <option value="Barato">Barato</option>
+            <select><br>
+        <label for="arrival">Fecha de Llegada*:</label><br>
+        <input type="date" id="arrival" name="arrival" required><br>
+        <label for="persons">Número de personas*:</label><br>
+        <input type="number" id="persons" name="persons" required><br>
+        <label>¿Qué deseas incluir en tu experiencia?</label><br>
+        <input type="checkbox" id="boarding" name="boarding"> Embarque<br>
+        <input type="checkbox" id="fooding" name="fooding"> Comida <br>
+        <input type="checkbox" id="sightseeing" name="sightseeing"> Visitantes Turísticos<br>
+        <label for="discount">El código de descuento:</label><br>
+        <input type="text" id="discount" name="discount"><br>
+        <label>Términos y condiciones*</label><br>
+        <input type="radio" id="agree" name="terms" value="agree"> Acepto
+        <input type="radio" id="disagree" name="terms" value="disagree"> No Acepto<br>
+        <input type="submit" value="Completar reserva">
+        </form>
+
+
+
+
+</body>
